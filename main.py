@@ -28,6 +28,11 @@ def test_bucketing_by_number_of_cycles():
   assert(counts["mediumCount"] == 3)
   assert(counts["highCount"] == 1)
   print("Done counting :)")
+#   boundry test cases
+  counts = count_batteries_by_usage([410, 300, 909, 600, 900, 910])
+  assert(counts["lowCount"] == 1)
+  assert(counts["mediumCount"] == 3)
+  assert(counts["highCount"] == 2)
 
 
 if __name__ == '__main__':
