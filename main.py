@@ -33,6 +33,17 @@ def test_bucketing_by_number_of_cycles():
   assert(counts["lowCount"] == 1)
   assert(counts["mediumCount"] == 3)
   assert(counts["highCount"] == 2)
+#   accepting inputs from the user
+#   counts = count_batteries_by_usage(take_inputs())
+#   assert((counts["lowCount"]+counts["mediumCount"]+counts["highCount"])==len(take_inputs))
+  
+def take_inputs():
+    n=int(input("Enter the number of batteries"))
+    cycles=[]
+    print("Enter the cycles")
+    for cycle in range(0,n):
+        cycles.append(int(input()))
+    return cycles
 
 
 if __name__ == '__main__':
