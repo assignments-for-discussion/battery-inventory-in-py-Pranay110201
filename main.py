@@ -5,11 +5,11 @@ def count_batteries_by_usage(cycles):
   mediumcount=0
   highcount=0
 #   loop to iterate through the input values present in cycles
-  for i in cycles:
+  for cycle in cycles:
 #     condition to check and categorize them based of the cycles 
-    if(i<410):
+    if(cycle<410):
       lowcount+=1
-    elif(i>=410 and i<909):
+    elif(cycle>=410 and cycle<909):
       mediumcount+=1
     else:
       highcount+=1
